@@ -1,0 +1,13 @@
+import serial
+ser = serial.Serial('COM', 9600) #
+Replace
+'COMx' with the correct port
+while True:
+data =
+ser readline ().decode(). strip()
+if data.startswith("Water
+Count: "):water
+_count =
+int(data.split(":")[1])
+print (f"Water Count:
+(water_count}")
